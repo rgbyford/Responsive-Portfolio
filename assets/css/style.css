@@ -1,0 +1,199 @@
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    color: white;
+    width: 250px;
+    height: auto; /* 50px; */
+ /*   line-height: 50px; */
+    margin-left: 10%;
+    margin-bottom: 0px;
+    font-size: 2em;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top:10px;
+}
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+     color: #4aaaa5;
+     background-color: #fff;
+     padding-top: 20px;
+     margin-top: 20px;
+     padding-left: 20px;
+}
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+p {
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+nav {
+    display: flex;
+    float: right;
+    justify-content: space-evenly;
+    width: 300px;
+}
+.navitem:hover {
+    background: yellowgreen;
+    color: #333;
+}
+@media screen and (max-width: 620px) {
+    nav {
+        flex-direction: column;
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        width: 125px;
+    }
+}
+/* The lines dividing content */
+.h_line1 {
+    width:100%;
+    height:1px;
+    background: #000;
+    margin: 0px 0px 0px 0px;
+}
+.h_line2 {
+    width:100%;
+    height:2px;
+   background: #888;
+}
+
+/* to position the content */
+.moveover {
+    background-image: url("../images/oriental.png");
+    background-color: #dddddd;
+    height: calc(100vh - 60px - 50px);  /* subtract footer and header heights */
+}
+.colorwhite {
+    margin-left: 10%;
+    background-color: #fff;
+    margin-right: 10%;
+    padding-bottom: 20px;
+    height: calc(100vh - 60px - 50px);  /* a hack */
+}
+
+/* for the form on the contact page */
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4AAAA5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Floating column for labels */
+  .col-25 {
+    float: left;
+    width: 100px;
+    margin-top: 6px;
+    margin-left: 10px;
+  }
+
+  .button {
+    width: 100px;
+    margin-top: 6px;
+    margin-left: 10px;
+  }
+  
+  /* Floating column for inputs */
+  .col-75 {
+    float: left;
+    width: 250px;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 90%;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  }
+.bigbluebutton {
+    background-color: #4aaaa5;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+/* for the portfolio page */
+.tblimg {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    padding: 0 6px;
+    float: left;
+    width: 200px;
+    /*background-color: white;*/
+}
+.tbltxt {
+    background-color: #4aaaa5;
+    color: white;
+    width: 200px;/*100%;*/
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    margin: 20px;
+    bottom: 40px;
+    text-align: center;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* all pages */
+.footerbackground {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #4aaaa5;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+}
+
